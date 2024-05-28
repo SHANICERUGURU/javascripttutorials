@@ -6,11 +6,20 @@
     <title>Document</title>
 </head>
 <h2 style="font-size: xx-large;font-family: Verdana, Geneva, Tahoma, sans-serif;">input password</h2>
-<body>
+<body class="body">
+    <style>
+        .body{
+            background-color: rgb(226, 153, 43);
+             }
+             input{
+                color: yellow;
+             }
+        
+    </style>
     
 
-    <input type="text" id="input" placeholder="enterpassword">
-    <button type="button" id="mybutton">enterpassword</button>
+    <input type="text" id="input" placeholder="enterpassword" oninput="changebordercolor()">
+    <button type="button" id="mybutton" >enterpassword</button>
 
 
 

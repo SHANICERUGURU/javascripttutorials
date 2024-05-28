@@ -36,7 +36,7 @@
         if(checkpassword(password, sampleNumbers) && checkpassword(password, sampleSpecial)&&checkpassword(password,sampleChars) &&(password.length>8)&& checkpassword(password,sampleCharsu)){
             alert("Correct input")
         } else if(!checkpassword(password,sampleChars)){
-                alert("does not contain letters")
+                alert("does not contain lowercase charachters")
             }
             else if(!checkpassword(password,sampleSpecial)){
                 alert("does not contain special charachters")
@@ -48,11 +48,19 @@
                             }
             else if (!checkpassword(password,sampleCharsu)){
                 alert("does not contain uppercase")
-            }               
-            
-            else{
+            }  
+             else{
             alert("Incorrect")
         }
     }
     button.addEventListener('click', validatePassword)
+
+
+    const myinput=document.getElementById("input");
+     function changebordercolor(){
+        myinput.style.borderBlockColor="red"
+        
+    
+}
+
 }
