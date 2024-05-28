@@ -45,8 +45,9 @@
             else if(password.length<8){
                                 alert("add more charachters")
                             }
+            else if ()               
             
-                            else{
+            else{
             alert("Incorrect")
         }
     }
